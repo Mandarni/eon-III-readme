@@ -62,16 +62,16 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 
 ## Milestone 1: Dice Mechanics
 * [X] Implement the "exploding dice" system. This will involve coding the dice to reroll and accumulate totals under certain conditions (usually a maximum roll).
-* [X] Implement other dice mechanics specific to Eon III, if any.
+* [ ] Implement other dice mechanics specific to Eon III, if any.
 * [X] Develop a system for attribute-based dice rolls.
-* [X] Implement a testing mechanism for these dice systems.
+* [X] Test the output of the dice system so that it adheres to the rules.
 
 ## Milestone 2: Health System
 * [X] Develop the process for tracking character health.
 * [X] Integrate the health system into the Health tab.
-* [X] Develop the mechanic that adjusts the number of dice rolled based on the initiation of a new row of pain points beyond the first. This needs to account for different attributes that determine the number of columns in the pain points row.
+* [X] Develop the mechanic that adjusts the number of dice rolled based on the initiation of a new row of pain points beyond the first. This needs to account for different attributes that determine the number of columns in the pain points row (i.e., +Ex1d6 if a player has begun on the second row of pain points, +Ex2d6 if the player has begun on the third row of pain points, etc).
 * [X] Thoroughly test this mechanic with different numbers of pain points and attribute values.
-* [X] Develop a similar mechanic for exhaustion points, taking into account that it affects difficulty every third row (i.e., 3, 5, 7, etc.).
+* [X] Develop a similar mechanic for exhaustion points, taking into account that it affects difficulty every third row (i.e., the player has begun 3rd (+Ex1d6), 5th (+Ex2d6), 7th (+Ex3d6), etc.).
 * [X] Implement Pain and Exhaustion Difficulty Modifiers
 * [X] Test the exhaustion mechanic thoroughly with different numbers of exhaustion points and attribute values.
 
@@ -81,23 +81,12 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 * [X] Test the implementation of base task difficulty levels with different tasks and difficulty levels.
 
 ## Milestone 4: Items
-* [ ] Develop systems for item usage, inventory management, and item effects.
+* [ ] Develop systems for item usage and inventory management, with various slots for left hand, left arm, etc.
+* [ ] Develop systems for armor system, with various slots for different armor pieces, with protection values displayed in an intuitive manner. 
 * [ ] Integrate these systems into the Items tab.
+* [ ] Develop easy item transfer between players and NPC through a button, for example a popup window that lists the "Players".  
 
-## Milestone 5: Skills System Expansion
-* [X] Improve the ObXd6 dice results so that the result is portrayed in an intuitive manner for the users, such as result, effect, etc.
-* [ ] Develop systems for skill advancement, use, and testing, including integration with the dice system.
-* [ ] Expand the existing Skills tab with these additional features.
-* [ ] Implement a system for unique or unusual skills, including custom skills.
-* [ ] Build a function to calculate the success or failure of a task, based on dice roll results and the character's skill level.
-* [ ] Ensure that this function works with the difficulty modifiers from Milestones 1 and 2.
-* [ ] Test this comprehensive system with a variety of skill levels, difficulty levels, and character statuses.
-
-## Milestone 6: Effects
-* [ ] Define how status effects work in the system, and their interactions with health and skills systems.
-* [ ] Develop the interface for managing status effects in the Effects tab.
-
-## Milestone 7: Combat System
+## Milestone 5: Combat System
 * [ ] Implement systems for status effects or conditions related to health.
 * [ ] Implement damage and healing mechanics.
 * [ ] Define combat mechanics, including attack and defense rolls, turn order, damage calculation.
@@ -105,11 +94,27 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 * [ ] Create the combat interface in the Combat tab.
 * [ ] Implement a system such that exhaustion increases during combat when players take actions.
 
+## Milestone 6: Skills System Expansion
+* [X] Implement a system for unique or unusual skills, including custom skills.
+* [X] Improve the ObXd6 dice results so that the result is portrayed in an intuitive manner for the users, such as result, effect, etc.
+* [ ] Develop systems for custom skill specializations (e.g., "Longsword" for the Sword-skill,
+* [ ] Remake the GUI for skills so that players don't have direct access to the skills, but rather through a subsidiary page, allowing for more fine control of values. With only derived values on the main skill page.  
+* [X] Build a function to calculate the success or failure of a task, based on dice roll results and the character's skill level.
+* [X] Ensure that this function works with the difficulty modifiers due to Health, etc.
+* [ ] Implement global skill modifier system that a GM can set through an exclusive GM sheet, for example due to difficulty modifiers due to weather. 
+* [ ] Test this comprehensive system with a variety of skill levels, difficulty levels, and character statuses.
+
 ## Milestone 8: Magic System
 * [ ] Define magic mechanics, including casting spells, the use of magic points or equivalent, and spell effects.
 * [ ] Implement dice mechanics and effects into the magic system.
+* [ ] Create an intuitive system for casting spells, for example through a popup window that details the steps each spell requires to be succesful, allowing for easy and swift spellcasting. 
 * [ ] Create the magic interface in the Spells tab.
 * [ ] Implement a system for learning, preparing, and using spells.
+
+## Milestone 7: Effects
+* [ ] Define how status effects work in the system, and their interactions with health and skills systems.
+* [ ] If applicable, add these effects to the magical system. 
+* [ ] Develop the interface for managing status effects in the Effects tab.
 
 ## Milestone 9: Character Features
 * [ ] Develop systems for defining character features, including unique advantages and disadvantages.
@@ -119,9 +124,11 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 ## Milestone 10: Compendium Packs
 * [ ] Develop a system for organizing and populating the Compendium Packs.
 * [ ] Populate Compendium Packs with content for monsters, races, and rules.
+* [ ] Develop drag and drop mechanics for items, etc, for compendiums and other data sources. 
 * [ ] Begin documenting the system and all its functions, ensuring that any user can understand how to use and troubleshoot the system.
 * [ ] Test the guide with users who are new to the system and adjust based on feedback.
 * [ ] Publish the guide and make it easily accessible to users.
+* [ ] Get user feedback on the various Compendium Packs; checking for errors, spelling and grammar mistakes, and re-write obtuse sections.  
 
 ## Milestone 11: Character Creation
 * [ ] Develop a system to guide players through creating a character, including a step-by-step process prompt.
@@ -140,9 +147,11 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 
 0.3.1
 * Added difficulty popup window with very easy - very difficult buttons
+* Moving on to milestone 4.
 
 0.2.1
-* Added a proto-version of the health system, moving on to milestone 3.
+* Added a proto-version of the health system
+* Moving on to milestone 3.
 
 0.1.4
 * Reworked the UI/UX of the dice output
