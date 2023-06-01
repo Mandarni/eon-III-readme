@@ -62,7 +62,7 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 
 ## Milestone 1: Dice Mechanics
 * [X] Implement the "exploding dice" system. This will involve coding the dice to reroll and accumulate totals under certain conditions (usually a maximum roll).
-* [ ] Implement other dice mechanics specific to Eon III, if any.
+* [ ] Implement other dice mechanics specific to Eon III.
 * [X] Develop a system for attribute-based dice rolls.
 * [X] Test the output of the dice system so that it adheres to the rules.
 
