@@ -147,7 +147,7 @@ It adds depth and complexity to magical abilities, making spellcasting an engagi
 
 0.3.1
 * Added difficulty popup window with very easy - very difficult buttons
-* Moving on to milestone 4.
+* Will spend some time to refactor the code (hint: all devs should spend time refactoring each iteration, thus alleviating and preventing the emergence of _spaghetti code_) before moving on to milestone 4.
 
 0.2.1
 * Added a proto-version of the health system
